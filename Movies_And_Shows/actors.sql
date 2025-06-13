@@ -17,4 +17,10 @@ VALUES
     (3,'Ty Burrell','1967-08-22','America'),
     (4,'Matt LeBlanc','1967-07-25','America'),
     (5,'Michael Richards','1949-07-24','America'),
-    (6,'Kennedy McMann','1996-10-30','America');
+    (6,'Kennedy McMann','1996-10-30','America'),
+    (7,'Winona Ryder','1971-10-29','America'),
+    (8,'Eric Stonestreet','1971-09-09','America'),
+    (9,'Antje Traue','1981-01-18','German'),
+    (10,'Lisa Kudrow','1963-07-30','America'),
+    (11,'Alex Saxon','1987-09-10','America'),
+    (12,'Jerry Stiller','1927-06-08','America');
