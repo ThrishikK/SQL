@@ -29,5 +29,3 @@ DATEDIFF(series.first_episode_date,actors.DOB)%365,'-Days' ) AS Age_At_First_Ep_
       ON actors_in_series.series_id = series.id
       ORDER BY Age_At_First_Ep_Aired DESC;
 
-SELECT CONCAT( ROUND( DATEDIFF(series.first_episode_date,actors.DOB)/365 ),'-Years ',
-DATEDIFF(series.first_episode_date,actors.DOB)%365,'-Days' ) AS Age_At_First_Ep_Aired;
