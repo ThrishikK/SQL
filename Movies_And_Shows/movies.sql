@@ -27,7 +27,14 @@ VALUES
 (5,'Man of Steel','Action/Sci-fi','Clark learns about the source of his abilities and his real home when he enters a Kryptonian ship in the Artic. However, an old enemy follows him to Earth in search of a codex and brings destruction.
 ',7.1,'2013-06-14','Zack Snyder',TRUE,'02:23'),
 (6,'Reality Bites','Comedy/Romance','Lelaina, Troy, Vickie and Sammy are friends who stay together. Lelaina wants be a filmmaker and makes her friends act for her film. Life gets complex when they have to handle career, love and family.
-',6.6,'1994-02-18','Ben Stiller',FALSE,'01:39');
+',6.6,'1994-02-18','Ben Stiller',FALSE,'01:39'),
+(7,'Isi & Ossi','Comedy/Romance','They couldn't be any more different: Isi (20) is a billionaire\'s daughter from posh Heidelberg, Ossi (23) lives in the nearby working-class town of Mannheim, raised by his poor, struggling single mother.
+',6.4,'2020-02-11','Oliver Kienle',FALSE,'01:53'),
+(8,'Charlie\'s Angels: Full Throttle','Action/Comedy','The Angels carry out an investigation of a sequence of murders which take place after the theft of the contents of a profile database related to FBI's witness protection programme.
+',4.9,'2003-07-27','Joseph McGinty Nichol',FALSE,'01:46'),
+(9,'Identity Thief','Comedy/Crime','Sandy Patterson, a businessman from Denver, learns that someone has stolen his identity in Florida. He decides to travel to Florida to bring the person to justice, but his plans soon take a back seat.
+',5.7,'2013-02-08','Seth Gordon',FALSE,'01:51'),
+(10,,'Trial and Error','Comedy/Romance','After a drinking spree, lawyer Charlie Tuttle fails to turn up for an important hearing. His friend Richard poses as Charlie to take his place in court. But Richard has no idea about being a lawyer.',.8,'1997-05-30','Jonathan Lynn',FALSE,'01:38');
 
 
 
