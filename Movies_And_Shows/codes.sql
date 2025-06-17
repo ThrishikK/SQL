@@ -29,3 +29,32 @@ DATEDIFF(series.first_episode_date,actors.DOB)%365,'-Days' ) AS Age_At_First_Ep_
       ON actors_in_series.series_id = series.id
       ORDER BY Age_At_First_Ep_Aired DESC;
 
+-- Cartesian Explosion
+SELECT 
+    actors.name AS actor, series.name AS series,movies.name AS movie
+FROM
+    actors
+        JOIN
+    actors_in_series ON actors.id = actors_in_series.actor_id
+        JOIN
+    series ON actors_in_series.series_id = series.id
+        JOIN
+    actors_in_movies ON actors.id = actors_in_movies.actor_id
+        JOIN
+    movies ON actors_in_movies.movie_id = movies.id
+
+
+-- ACTORS MOVIES AND SERIES COMMA SEPARATED QUERY
+SELECT actors.name AS actor_name,
+GROUP_CONCAT(DISTINCT series.name) AS series_name,
+GROUP_CONCAT(DISTINCT movies.name) AS movie_name
+ FROM actors
+LEFT JOIN actors_in_series
+ON actors.id = actors_in_series.actor_id
+LEFT JOIN series 
+ON actors_in_series.series_id = series.id
+LEFT JOIN actors_in_movies
+ON actors.id = actors_in_movies.actor_id
+LEFT JOIN movies 
+ON actors_in_movies.movie_id = movies.id
+GROUP BY actor_name;

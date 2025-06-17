@@ -7,7 +7,7 @@ CREATE TABLE actors_in_movies(
   FOREIGN KEY (movie_id)
   REFERENCES movies(id),
   PRIMARY KEY(actor_id,movie_id)
-)
+);
 
 INSERT INTO actors_in_movies
 (id,actor_id,movie_id)
@@ -21,4 +21,5 @@ VALUES
     (7,2,7),
     (8,4,3),
     (9,8,2),
-    (10,5,4);
+    (10,5,4),
+    (11,1,11)
