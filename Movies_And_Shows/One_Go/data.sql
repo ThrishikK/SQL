@@ -1,14 +1,4 @@
-DROP DATABASE series_and_movies;
-CREATE DATABASE series_and_movies;
-USE  series_and_movies;
-
-CREATE TABLE actors(
-id INT AUTO_INCREMENT,
-name VARCHAR(100) NOT NULL,
-DOB DATE,
-country VARCHAR(100) NOT NULL,
-PRIMARY KEY(id)
-);
+-- ACTORS TABLE 
 
 INSERT INTO actors(id,name,DOB,country)
 VALUES
@@ -23,45 +13,24 @@ VALUES
     (9,'Antje Traue','1981-01-18','German'),
     (10,'Lisa Kudrow','1963-07-30','America'),
     (11,'Alex Saxon','1987-09-10','America'),
-    (12,'Jerry Stiller','1927-06-08','America'),
-    (13,'Elle Fanning','1998-04-09','America');
+    (12,'Jerry Stiller','1927-06-08','America');
 
-    CREATE TABLE series(
-    id INT AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
-    genre VARCHAR(50) NOT NULL,
-    rating DECIMAL(2,1)  NOT NULL,
-    creators VARCHAR(150) NOT NULL,
-    no_of_episodes INT NOT NULL,
-    first_episode_date DATE NOT NULL,
-    no_of_seasons INT NOT NULL,
-    PRIMARY KEY(id)
-);
+
+-- SERIES TABLE
 
 INSERT INTO 
     series
-		(id,name,genre,rating,creators,no_of_episodes,first_episode_date,no_of_seasons)
+		(id,name,genre,rating,creators,no_of_episodes,first_episode_date,no_of_seasos)
     VALUES
 		    (1,'Stranger Things','Horror',8.6,'Matt Duffer,Ross Duffer',34,'2016-07-15',4),
         (2,'Dark','Thriller',8.7,'Baran bo Odar, Jantje Friese',26,'2017-12-01',3),
         (3,'Modern Family','Sitcom',8.5,'Christopher Lloyd, Steven Levitan',250,'2009-09-23',11),
         (4,'Friends','Sitcom',8.9,'Marta Kauffman, David Crane',236,'1994-09-22',10),
         (5,'Seinfeld','Sitcom',8.9,'Jerry Seinfeld, Larry David',180,'1989-07-05',9),
-        (6,'Nancy Drew','Thriller',6.7,'Edward Stratemeyer',62,'2019-10-09',4),
-        (7,'The King of Queens','Sitcom',7.4,' Kevin James, Gary Valentine',207,'1998-09-21',9);
+        (6,'Nancy Drew','Thriller',6.7,'Edward Stratemeyer',62,'2019-10-09',4);
 
-
-CREATE TABLE actors_in_series (
-    id INT,
-    actor_id INT,
-    series_id INT,
-    FOREIGN KEY (actor_id)
-        REFERENCES actors (id),
-    FOREIGN KEY (series_id)
-        REFERENCES series (id),
-        PRIMARY KEY(actor_id,series_id)
-);
-
+    -- ACTORS IN SERIES TABLE
+    
 INSERT INTO 
 	actors_in_series
 		(id,actor_id,series_id)
@@ -78,24 +47,10 @@ INSERT INTO
     (10,10,4),
     (11,11,6),
         (12,12,5),
-        (13,1,3),
-        (14,12,7);
-
-CREATE TABLE movies (
-  id INT AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
-  genre VARCHAR(100) NOT NULL,
-  summary VARCHAR(300) NOT NULL,
-  rating DECIMAL(2,1) NOT NULL,
-  release_date DATE NOT NULL,
-  director VARCHAR(50) NOT NULL,
-  sequel BOOLEAN NOT NULL,
-  running_time TIME NOT NULL,
-  PRIMARY KEY(id)
-);
-
-
-
+        (12,1,3);
+        
+    -- MOVIES TABLE
+    
 INSERT INTO movies
 (id,name,genre,summary,rating,release_date,director,sequel,running_time)
 VALUES 
@@ -119,20 +74,10 @@ VALUES
 ',5.7,'2013-02-08','Seth Gordon',FALSE,'01:51'),
 (10,'Trial and Error','Comedy/Romance','After a drinking spree, lawyer Charlie Tuttle fails to turn up for an important hearing. His friend Richard poses as Charlie to take his place in court. But Richard has no idea about being a lawyer.',.8,'1997-05-30','Jonathan Lynn',FALSE,'01:38'),
 (11,'Godzilla: King of the Monsters','Action/Sci-fi','A legendary monster named King Ghidorah awakens Rodan, as well as other titans, to destroy the world. To defeat them, the crypto-zoological organisation Monarch must rely on the almighty Godzilla.
-',6,'2019-05-31','Michael Dougherty',TRUE,'02:05'),
-(12,'Super 8','Sci-fi/Thriller','A train crash sets off a series of bizarre events in a small town. When Jack Lang, the deputy sheriff, begins the investigation, he uncovers a shocking secret.
-',7,'2011-07-14','J.J. Abrams',FALSE,'01:52');
+',6,'2019-05-31','Michael Dougherty',TRUE,'02:05');
 
-CREATE TABLE actors_in_movies(
-  id INT,
-  actor_id INT,
-  movie_id INT,
-  FOREIGN KEY (actor_id) 
-  REFERENCES actors(id),
-  FOREIGN KEY (movie_id)
-  REFERENCES movies(id),
-  PRIMARY KEY(actor_id,movie_id)
-);
+
+-- ACTORS IN MOVIES TABLE
 
 INSERT INTO actors_in_movies
 (id,actor_id,movie_id)
@@ -147,5 +92,5 @@ VALUES
     (8,4,3),
     (9,8,2),
     (10,5,4),
-    (11,1,11),
-    (12,13,12);
+    (11,1,11);
+
