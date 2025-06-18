@@ -20,7 +20,7 @@ CREATE TABLE series(
     creators VARCHAR(150) NOT NULL,
     no_of_episodes INT NOT NULL,
     first_episode_date DATE NOT NULL,
-    no_of_seasos INT NOT NULL,
+    no_of_seasons INT NOT NULL,
     PRIMARY KEY(id)
 );
 

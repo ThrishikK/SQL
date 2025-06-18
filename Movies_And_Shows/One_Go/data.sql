@@ -13,21 +13,26 @@ VALUES
     (9,'Antje Traue','1981-01-18','German'),
     (10,'Lisa Kudrow','1963-07-30','America'),
     (11,'Alex Saxon','1987-09-10','America'),
-    (12,'Jerry Stiller','1927-06-08','America');
+    (12,'Jerry Stiller','1927-06-08','America'),
+    (13,'Steve Carell','1962-08-16','America'),
+    (14,'Craig Robinson','1971-10-25','America'),
+    (15,'Andy Samberg','1978-07-18','America');
 
 
 -- SERIES TABLE
 
 INSERT INTO 
     series
-		(id,name,genre,rating,creators,no_of_episodes,first_episode_date,no_of_seasos)
+		(id,name,genre,rating,creators,no_of_episodes,first_episode_date,no_of_seasons)
     VALUES
 		    (1,'Stranger Things','Horror',8.6,'Matt Duffer,Ross Duffer',34,'2016-07-15',4),
         (2,'Dark','Thriller',8.7,'Baran bo Odar, Jantje Friese',26,'2017-12-01',3),
         (3,'Modern Family','Sitcom',8.5,'Christopher Lloyd, Steven Levitan',250,'2009-09-23',11),
         (4,'Friends','Sitcom',8.9,'Marta Kauffman, David Crane',236,'1994-09-22',10),
         (5,'Seinfeld','Sitcom',8.9,'Jerry Seinfeld, Larry David',180,'1989-07-05',9),
-        (6,'Nancy Drew','Thriller',6.7,'Edward Stratemeyer',62,'2019-10-09',4);
+        (6,'Nancy Drew','Thriller',6.7,'Edward Stratemeyer',62,'2019-10-09',4),
+        (7,'The Office','Sitcom',9,'Greg Daniels; Ricky Gervais',201,'2005-03-24',9),
+        (8,'Brooklyn Nine-Nine','Sitcom',8.4,'Michael Schur, Dan Goor, Carly Hallam, Norm Hiscock',153,'2013-09-17',8);
 
     -- ACTORS IN SERIES TABLE
     
@@ -47,7 +52,11 @@ INSERT INTO
     (10,10,4),
     (11,11,6),
         (12,12,5),
-        (12,1,3);
+        (13,1,3),
+        (14,13,7),
+        (15,14,7),
+        (16,14,8),
+        (17,15,8);
         
     -- MOVIES TABLE
     
