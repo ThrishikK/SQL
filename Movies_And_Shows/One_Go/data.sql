@@ -19,7 +19,9 @@ VALUES
     (15,'Andy Samberg','1978-07-18','America'),
     (16,'Stephanie Beatriz','1981-02-10','Argentine'),
     (17,'Jim Parsons','1973-03-24','America'),
-    (18,'Brian George','1952-07-01','British');
+    (18,'Brian George','1952-07-01','British'),
+    (19,'Matthew McConaughey','1969-11-04','America'),
+    (20,'Jodie Foster','1962-11-19','America');
 
 
 -- SERIES TABLE
@@ -36,7 +38,8 @@ INSERT INTO
         (6,'Nancy Drew','Thriller',6.7,'Edward Stratemeyer',62,'2019-10-09',4),
         (7,'The Office','Sitcom',9,'Greg Daniels; Ricky Gervais',201,'2005-03-24',9),
         (8,'Brooklyn Nine-Nine','Sitcom',8.4,'Michael Schur, Dan Goor, Carly Hallam, Norm Hiscock',153,'2013-09-17',8),
-        (9,'The Big Bang Theory','Sitcom',8.1,'Chuck Lorre, Bill Prady',279,'2007-09-24',12);
+        (9,'The Big Bang Theory','Sitcom',8.1,'Chuck Lorre, Bill Prady',279,'2007-09-24',12),
+        (10,'True Detective','Drama',8.9,' Nic Pizzolatto, Issa López',30,'2014-01-12',4);
 
     -- ACTORS IN SERIES TABLE
     
@@ -65,7 +68,9 @@ INSERT INTO
         (19,16,8),
         (20,17,9),
         (21,18,5),
-        (22,18,9);
+        (22,18,9),
+        (23,19,10),
+        (24,20,10);
         
     -- MOVIES TABLE
     
@@ -90,9 +95,10 @@ VALUES
 ',4.9,'2003-07-27','Joseph McGinty Nichol',FALSE,'01:46'),
 (9,'Identity Thief','Comedy/Crime','Sandy Patterson, a businessman from Denver, learns that someone has stolen his identity in Florida. He decides to travel to Florida to bring the person to justice, but his plans soon take a back seat.
 ',5.7,'2013-02-08','Seth Gordon',FALSE,'01:51'),
-(10,'Trial and Error','Comedy/Romance','After a drinking spree, lawyer Charlie Tuttle fails to turn up for an important hearing. His friend Richard poses as Charlie to take his place in court. But Richard has no idea about being a lawyer.',.8,'1997-05-30','Jonathan Lynn',FALSE,'01:38'),
+(10,'Trial and Error','Comedy/Romance','After a drinking spree, lawyer Charlie Tuttle fails to turn up for an important hearing. His friend Richard poses as Charlie to take his place in court. But Richard has no idea about being a lawyer.',5.8,'1997-05-30','Jonathan Lynn',FALSE,'01:38'),
 (11,'Godzilla: King of the Monsters','Action/Sci-fi','A legendary monster named King Ghidorah awakens Rodan, as well as other titans, to destroy the world. To defeat them, the crypto-zoological organisation Monarch must rely on the almighty Godzilla.
-',6,'2019-05-31','Michael Dougherty',TRUE,'02:05');
+',6,'2019-05-31','Michael Dougherty',TRUE,'02:05'),
+(12,'Interstellar','Sci-fi/Adventure','When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.',8.7,'2014-11-07','Christopher Nolan',FALSE,'02:49');
 
 
 -- ACTORS IN MOVIES TABLE
@@ -110,5 +116,6 @@ VALUES
     (8,4,3),
     (9,8,2),
     (10,5,4),
-    (11,1,11);
+    (11,1,11),
+    (12,19,12);
 
