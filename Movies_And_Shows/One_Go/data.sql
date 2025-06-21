@@ -98,7 +98,8 @@ VALUES
 (10,'Trial and Error','Comedy/Romance','After a drinking spree, lawyer Charlie Tuttle fails to turn up for an important hearing. His friend Richard poses as Charlie to take his place in court. But Richard has no idea about being a lawyer.',5.8,'1997-05-30','Jonathan Lynn',FALSE,'01:38'),
 (11,'Godzilla: King of the Monsters','Action/Sci-fi','A legendary monster named King Ghidorah awakens Rodan, as well as other titans, to destroy the world. To defeat them, the crypto-zoological organisation Monarch must rely on the almighty Godzilla.
 ',6,'2019-05-31','Michael Dougherty',TRUE,'02:05'),
-(12,'Interstellar','Sci-fi/Adventure','When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.',8.7,'2014-11-07','Christopher Nolan',FALSE,'02:49');
+(12,'Interstellar','Sci-fi/Adventure','When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.',8.7,'2014-11-07','Christopher Nolan',FALSE,'02:49'),
+(13,'Crazy, Stupid, Love','Romance/Drama','Cal, a middle-aged man, is heartbroken when his wife asks for a divorce. However, to get over his loss, he starts picking up women at a bar on the insistence of his new-found friend, Jacob.',7.4,'2011-09-16',' Glenn Ficarra, John Requa',FALSE,'01:48');
 
 
 -- ACTORS IN MOVIES TABLE
@@ -117,5 +118,6 @@ VALUES
     (9,8,2),
     (10,5,4),
     (11,1,11),
-    (12,19,12);
+    (12,19,12),
+    (13,13,13);
 
