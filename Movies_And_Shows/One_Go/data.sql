@@ -21,7 +21,10 @@ VALUES
     (17,'Jim Parsons','1973-03-24','America'),
     (18,'Brian George','1952-07-01','British'),
     (19,'Matthew McConaughey','1969-11-04','America'),
-    (20,'Jodie Foster','1962-11-19','America');
+    (20,'Jodie Foster','1962-11-19','America'),
+    (21,'David Denman','1973-07-25','America'),
+    (22,'Guy Pearce','1967-10-05','British'),
+    (23,'Courteney Cox','1964-06-15','America');
 
 
 -- SERIES TABLE
@@ -39,7 +42,8 @@ INSERT INTO
         (7,'The Office','Sitcom',9,'Greg Daniels; Ricky Gervais',201,'2005-03-24',9),
         (8,'Brooklyn Nine-Nine','Sitcom',8.4,'Michael Schur, Dan Goor, Carly Hallam, Norm Hiscock',153,'2013-09-17',8),
         (9,'The Big Bang Theory','Sitcom',8.1,'Chuck Lorre, Bill Prady',279,'2007-09-24',12),
-        (10,'True Detective','Drama',8.9,' Nic Pizzolatto, Issa López',30,'2014-01-12',4);
+        (10,'True Detective','Drama',8.9,' Nic Pizzolatto, Issa López',30,'2014-01-12',4),
+        (11,'Mare of Easttown','Drama',8.4,'Brad Ingelsby',7,'2021-04-18',1);
 
     -- ACTORS IN SERIES TABLE
     
@@ -70,7 +74,13 @@ INSERT INTO
         (21,18,5),
         (22,18,9),
         (23,19,10),
-        (24,20,10);
+        (24,20,10),
+        (25,21,7),
+        (26,21,11),
+        (27,22,11),
+        (28,23,4),
+        (29,23,5),
+        (30,23,3);
         
     -- MOVIES TABLE
     
@@ -99,7 +109,9 @@ VALUES
 (11,'Godzilla: King of the Monsters','Action/Sci-fi','A legendary monster named King Ghidorah awakens Rodan, as well as other titans, to destroy the world. To defeat them, the crypto-zoological organisation Monarch must rely on the almighty Godzilla.
 ',6,'2019-05-31','Michael Dougherty',TRUE,'02:05'),
 (12,'Interstellar','Sci-fi/Adventure','When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.',8.7,'2014-11-07','Christopher Nolan',FALSE,'02:49'),
-(13,'Crazy, Stupid, Love','Romance/Drama','Cal, a middle-aged man, is heartbroken when his wife asks for a divorce. However, to get over his loss, he starts picking up women at a bar on the insistence of his new-found friend, Jacob.',7.4,'2011-09-16',' Glenn Ficarra, John Requa',FALSE,'01:48');
+(13,'Crazy, Stupid, Love','Romance/Drama','Cal, a middle-aged man, is heartbroken when his wife asks for a divorce. However, to get over his loss, he starts picking up women at a bar on the insistence of his new-found friend, Jacob.',7.4,'2011-09-16',' Glenn Ficarra, John Requa',FALSE,'01:48'),
+(14,'L.A. Confidential','Crime/Thriller','Three detectives from Los Angeles Police Department investigate multiple homicides. While unearthing the evidence and the suspects, the trail leads to corruption in their own department.
+',8.2,'1997-09-19','Curtis Hanson',FALSE,'02:18');
 
 
 -- ACTORS IN MOVIES TABLE
@@ -119,5 +131,5 @@ VALUES
     (10,5,4),
     (11,1,11),
     (12,19,12),
-    (13,13,13);
-
+    (13,13,13),
+    (14,22,14);

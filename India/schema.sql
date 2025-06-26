@@ -10,6 +10,6 @@ CREATE TABLE STATES(
   largest_city VARCHAR(50),
   formation_date DATE,
   official_language VARCHAR(50),
-  districts TINYINT,
+  districts TINYINT UNSIGNED,
   PRIMARY KEY(id)
 );

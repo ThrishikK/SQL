@@ -58,3 +58,58 @@ ON actors.id = actors_in_movies.actor_id
 LEFT JOIN movies 
 ON actors_in_movies.movie_id = movies.id
 GROUP BY actor_name;
+-- RANDOM
+SELECT 
+    actors.name AS actor_name, GROUP_CONCAT(series.name) AS series_name
+FROM
+    actors
+        LEFT JOIN
+    actors_in_series ON actors.id = actors_in_series.actor_id
+        LEFT JOIN
+    series ON actors_in_series.series_id = series.id
+WHERE
+    series.name IN ('Brooklyn Nine-Nine' , 'The Office','Modern Family')
+    GROUP BY actors.name
+ORDER BY series_name
+
+-- 
+SELECT 
+    actors.name AS actor_name,
+    GROUP_CONCAT(movies.name) AS movies_name,
+    AVG(movies.rating) AS actor_avg_rating
+FROM
+    actors
+        LEFT JOIN
+    actors_in_movies ON actors.id = actors_in_movies.actor_id
+        LEFT JOIN
+    movies ON actors_in_movies.movie_id = movies.id
+    GROUP BY actors.name
+   
+--    
+SELECT 
+    actors.name AS actor_name,
+    GROUP_CONCAT(series.name) AS series_name,
+    AVG(series.rating) AS actor_avg_rating
+FROM
+    actors
+        LEFT JOIN
+    actors_in_series ON actors.id = actors_in_series.actor_id
+        LEFT JOIN
+    series ON actors_in_series.series_id = series.id
+    GROUP BY actors.name
+    
+
+    -- 
+    SELECT 
+    actors.name AS actor_name,
+    GROUP_CONCAT(series.name) AS series_names,
+    COUNT(series.name) AS series_count,
+    AVG(series.rating) AS actor_avg_rating
+FROM
+    actors
+        LEFT JOIN
+    actors_in_series ON actors.id = actors_in_series.actor_id
+        LEFT JOIN
+    series ON actors_in_series.series_id = series.id
+GROUP BY actors.name
+   
