@@ -24,7 +24,10 @@ VALUES
     (20,'Jodie Foster','1962-11-19','America'),
     (21,'David Denman','1973-07-25','America'),
     (22,'Guy Pearce','1967-10-05','British'),
-    (23,'Courteney Cox','1964-06-15','America');
+    (23,'Courteney Cox','1964-06-15','America'),
+    (24,'Jennifer Aniston','1969-02-11','America'),
+    (25,'Philip Baker Hall','1931-09-10','America'),
+    (26,'Kevin Spacey','1959-07-26','America');
 
 
 -- SERIES TABLE
@@ -80,7 +83,10 @@ INSERT INTO
         (27,22,11),
         (28,23,4),
         (29,23,5),
-        (30,23,3);
+        (30,23,3),
+        (31,24,4),
+        (32,25,3),
+        (33,25,5);
         
     -- MOVIES TABLE
     
@@ -111,7 +117,9 @@ VALUES
 (12,'Interstellar','Sci-fi/Adventure','When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.',8.7,'2014-11-07','Christopher Nolan',FALSE,'02:49'),
 (13,'Crazy, Stupid, Love','Romance/Drama','Cal, a middle-aged man, is heartbroken when his wife asks for a divorce. However, to get over his loss, he starts picking up women at a bar on the insistence of his new-found friend, Jacob.',7.4,'2011-09-16',' Glenn Ficarra, John Requa',FALSE,'01:48'),
 (14,'L.A. Confidential','Crime/Thriller','Three detectives from Los Angeles Police Department investigate multiple homicides. While unearthing the evidence and the suspects, the trail leads to corruption in their own department.
-',8.2,'1997-09-19','Curtis Hanson',FALSE,'02:18');
+',8.2,'1997-09-19','Curtis Hanson',FALSE,'02:18'),
+(15,'Bruce Almighty','Comedy/Fantasy','Bruce, a TV reporter, is dissatisfied with his life despite his professional popularity and the love of his girlfriend. He denigrates God, who then gives Bruce divine powers to run the world.',6.8,'2003-05-23','Tom Shadyac',FALSE,'01:41'),
+(16,'American Beauty','Comedy/Romance','Lester\'s life seems perfect, having a respectable job and a family, but inside, he is slowly slipping into depression. Struggling with life, he gets infatuated with his daughter\'s friend, Angela.',8.3,'1999-09-17','Sam Mendes',FALSE,'02:02');
 
 
 -- ACTORS IN MOVIES TABLE
@@ -132,4 +140,9 @@ VALUES
     (11,1,11),
     (12,19,12),
     (13,13,13),
-    (14,22,14);
+    (14,22,14),
+    (15,24,15),
+    (16,13,15),
+    (17,25,15),
+    (18,26,14),
+    (19,26,16);
