@@ -27,7 +27,11 @@ VALUES
     (23,'Courteney Cox','1964-06-15','America'),
     (24,'Jennifer Aniston','1969-02-11','America'),
     (25,'Philip Baker Hall','1931-09-10','America'),
-    (26,'Kevin Spacey','1959-07-26','America');
+    (26,'Kevin Spacey','1959-07-26','America'),
+    (27,'Chazz Palminteri','1952-05-15','America'),
+    (28,'Judy Greer','1975-07-20','America'),
+    (29,'Charlie Sheen','1965-09-03','America'),
+    (30,'Danny DeVito','1944-11-17','America');
 
 
 -- SERIES TABLE
@@ -46,7 +50,8 @@ INSERT INTO
         (8,'Brooklyn Nine-Nine','Sitcom',8.4,'Michael Schur, Dan Goor, Carly Hallam, Norm Hiscock',153,'2013-09-17',8),
         (9,'The Big Bang Theory','Sitcom',8.1,'Chuck Lorre, Bill Prady',279,'2007-09-24',12),
         (10,'True Detective','Drama',8.9,' Nic Pizzolatto, Issa López',30,'2014-01-12',4),
-        (11,'Mare of Easttown','Drama',8.4,'Brad Ingelsby',7,'2021-04-18',1);
+        (11,'Mare of Easttown','Drama',8.4,'Brad Ingelsby',7,'2021-04-18',1),
+        (12,'Two and a Half Men','Sitcom',7.1,' Chuck Lorre, Lee Aronsohn',262,'2003-09-22',12);
 
     -- ACTORS IN SERIES TABLE
     
@@ -86,7 +91,13 @@ INSERT INTO
         (30,23,3),
         (31,24,4),
         (32,25,3),
-        (33,25,5);
+        (33,25,5),
+        (34,27,3),
+        (35,28,3),
+        (36,28,12),
+        (37,29,4),
+        (38,29,12),
+        (39,30,4);
         
     -- MOVIES TABLE
     
@@ -119,7 +130,10 @@ VALUES
 (14,'L.A. Confidential','Crime/Thriller','Three detectives from Los Angeles Police Department investigate multiple homicides. While unearthing the evidence and the suspects, the trail leads to corruption in their own department.
 ',8.2,'1997-09-19','Curtis Hanson',FALSE,'02:18'),
 (15,'Bruce Almighty','Comedy/Fantasy','Bruce, a TV reporter, is dissatisfied with his life despite his professional popularity and the love of his girlfriend. He denigrates God, who then gives Bruce divine powers to run the world.',6.8,'2003-05-23','Tom Shadyac',FALSE,'01:41'),
-(16,'American Beauty','Comedy/Romance','Lester\'s life seems perfect, having a respectable job and a family, but inside, he is slowly slipping into depression. Struggling with life, he gets infatuated with his daughter\'s friend, Angela.',8.3,'1999-09-17','Sam Mendes',FALSE,'02:02');
+(16,'American Beauty','Comedy/Romance','Lester\'s life seems perfect, having a respectable job and a family, but inside, he is slowly slipping into depression. Struggling with life, he gets infatuated with his daughter\'s friend, Angela.',8.3,'1999-09-17','Sam Mendes',FALSE,'02:02'),
+(17,'A Bronx Tale','Crime/Thriller','Calogero, a teenager from the Bronx, befriends Sonny, a local mobster who initiates him into the gangster ways. His life takes a turn for the worse when he falls in love with his classmate Jane.',7.8,'1993-09-29','Robert De Niro',FALSE,'02:01'),
+(18,'The Usual Suspects','Thriller/Crime','A con man is interrogated by the police after surviving a deadly shoot-out. When questioned about the incident, he reveals a story about five criminals led by a notorious mastermind named Keyser Soze.
+',8.5,'1995-08-16','Bryan Singer',FALSE,'01:46');
 
 
 -- ACTORS IN MOVIES TABLE
@@ -145,4 +159,6 @@ VALUES
     (16,13,15),
     (17,25,15),
     (18,26,14),
-    (19,26,16);
+    (19,26,16),(20,27,17),
+    (21,26,18),(22,27,18),
+    (23,30,14);
