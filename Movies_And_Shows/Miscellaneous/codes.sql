@@ -126,3 +126,19 @@ SELECT
 FROM
     actors
 GROUP BY Actor_Category
+
+-- WITH KEYWORD
+WITH actor_gen AS (
+SELECT *,
+    CASE
+        WHEN YEAR(DOB) >= 1997 AND YEAR(DOB) <= 2010 THEN 'GEN-Z'
+        WHEN YEAR(DOB) >= 1981 AND YEAR(DOB) <= 1996 THEN 'MILLENIALS'
+        WHEN YEAR(DOB) >= 1965 AND YEAR(DOB) <= 1980 THEN 'GEN-X'
+        WHEN YEAR(DOB) >= 1946 AND YEAR(DOB) <= 1964 THEN 'BOOMERS'
+        ELSE 'SILENT'
+    END AS Actor_Category
+FROM
+    actors)
+    
+    SELECT * FROM actor_gen
+    WHERE Actor_Category = 'BOOMERS';

@@ -31,7 +31,8 @@ VALUES
     (27,'Chazz Palminteri','1952-05-15','America'),
     (28,'Judy Greer','1975-07-20','America'),
     (29,'Charlie Sheen','1965-09-03','America'),
-    (30,'Danny DeVito','1944-11-17','America');
+    (30,'Danny DeVito','1944-11-17','America'),
+    (31,'Charlie Heaton','1994-02-06','British');
 
 
 -- SERIES TABLE
@@ -97,7 +98,8 @@ INSERT INTO
         (36,28,12),
         (37,29,4),
         (38,29,12),
-        (39,30,4);
+        (39,30,4),
+        (40,31,1);
         
     -- MOVIES TABLE
     
@@ -133,7 +135,8 @@ VALUES
 (16,'American Beauty','Comedy/Romance','Lester\'s life seems perfect, having a respectable job and a family, but inside, he is slowly slipping into depression. Struggling with life, he gets infatuated with his daughter\'s friend, Angela.',8.3,'1999-09-17','Sam Mendes',FALSE,'02:02'),
 (17,'A Bronx Tale','Crime/Thriller','Calogero, a teenager from the Bronx, befriends Sonny, a local mobster who initiates him into the gangster ways. His life takes a turn for the worse when he falls in love with his classmate Jane.',7.8,'1993-09-29','Robert De Niro',FALSE,'02:01'),
 (18,'The Usual Suspects','Thriller/Crime','A con man is interrogated by the police after surviving a deadly shoot-out. When questioned about the incident, he reveals a story about five criminals led by a notorious mastermind named Keyser Soze.
-',8.5,'1995-08-16','Bryan Singer',FALSE,'01:46');
+',8.5,'1995-08-16','Bryan Singer',FALSE,'01:46'),
+(19,'The New Mutants','Horror/Action','Five young mutants who have suffered traumatic experiences are admitted into a secret facility. Soon after, they begin experiencing visions of their past and doubt the safety of the facility.',5.3,'2020-08-28','Josh Boone',FALSE,'01:34');
 
 
 -- ACTORS IN MOVIES TABLE
@@ -161,4 +164,4 @@ VALUES
     (18,26,14),
     (19,26,16),(20,27,17),
     (21,26,18),(22,27,18),
-    (23,30,14);
+    (23,30,14),(24,31,19);
