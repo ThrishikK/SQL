@@ -32,7 +32,11 @@ VALUES
     (28,'Judy Greer','1975-07-20','America'),
     (29,'Charlie Sheen','1965-09-03','America'),
     (30,'Danny DeVito','1944-11-17','America'),
-    (31,'Charlie Heaton','1994-02-06','British');
+    (31,'Charlie Heaton','1994-02-06','British'),
+    (32,'Kaitlin Olson','1975-08-18','America'),
+    (33,'Gregory Peck','1916-04-05','America'),
+    (34,'Marlon Brando','1924-04-03','America'),
+    (35,'Tina Fey','1970-05-18','America');
 
 
 -- SERIES TABLE
@@ -52,7 +56,9 @@ INSERT INTO
         (9,'The Big Bang Theory','Sitcom',8.1,'Chuck Lorre, Bill Prady',279,'2007-09-24',12),
         (10,'True Detective','Drama',8.9,' Nic Pizzolatto, Issa López',30,'2014-01-12',4),
         (11,'Mare of Easttown','Drama',8.4,'Brad Ingelsby',7,'2021-04-18',1),
-        (12,'Two and a Half Men','Sitcom',7.1,' Chuck Lorre, Lee Aronsohn',262,'2003-09-22',12);
+        (12,'Two and a Half Men','Sitcom',7.1,' Chuck Lorre, Lee Aronsohn',262,'2003-09-22',12),
+        (13,'It\'s Always Sunny in Philadelphia','Sitcom',8.8,' Rob McElhenney',170,'2005-08-04',16),
+        (14,'30 Rock','Sitcom',8.3,'Tina Fey',138,'2006-10-11',7);
 
     -- ACTORS IN SERIES TABLE
     
@@ -99,7 +105,10 @@ INSERT INTO
         (37,29,4),
         (38,29,12),
         (39,30,4),
-        (40,31,1);
+        (40,31,1),
+        (41,32,13),
+        (42,30,13),
+        (43,35,14);
         
     -- MOVIES TABLE
     
@@ -136,7 +145,11 @@ VALUES
 (17,'A Bronx Tale','Crime/Thriller','Calogero, a teenager from the Bronx, befriends Sonny, a local mobster who initiates him into the gangster ways. His life takes a turn for the worse when he falls in love with his classmate Jane.',7.8,'1993-09-29','Robert De Niro',FALSE,'02:01'),
 (18,'The Usual Suspects','Thriller/Crime','A con man is interrogated by the police after surviving a deadly shoot-out. When questioned about the incident, he reveals a story about five criminals led by a notorious mastermind named Keyser Soze.
 ',8.5,'1995-08-16','Bryan Singer',FALSE,'01:46'),
-(19,'The New Mutants','Horror/Action','Five young mutants who have suffered traumatic experiences are admitted into a secret facility. Soon after, they begin experiencing visions of their past and doubt the safety of the facility.',5.3,'2020-08-28','Josh Boone',FALSE,'01:34');
+(19,'The New Mutants','Horror/Action','Five young mutants who have suffered traumatic experiences are admitted into a secret facility. Soon after, they begin experiencing visions of their past and doubt the safety of the facility.',5.3,'2020-08-28','Josh Boone',FALSE,'01:34'),
+(20,'To Kill a Mockingbird','Thriller/Drama','In the Depression era, Atticus Finch, a lawyer, sets out to defend a black man, who is accused of raping a white woman. Meanwhile, his children, Scout and Jem, spy on their reclusive neighbour.',8.3,'1963-02-14','Robert Mulligan',FALSE,'02:09'),
+(21,'Roman Holiday','Comedy/Romance ','Stuck with boredom in her luxurious confinement, a princess escapes from her guardians and falls in love with an American news reporter in Rome.',8,'1953-09-02','William Wyler',FALSE,'01:58'),
+(22,'On the Waterfront','Thriller/Crime','Terry Mallory runs errands for Johnny Friendly who is a gang lord and is involved in illegal activities. He meets the sister of a man who was killed by Johnny\'s man and decides to revolt against him.',8.1,'1954-10-01','Elia Kazan',FALSE,'01:48'),
+(23,'The Godfather','crime','Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son, Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.',9.2,'1972-03-24','Francis Ford Coppola',TRUE,'02:55');
 
 
 -- ACTORS IN MOVIES TABLE
@@ -164,4 +177,6 @@ VALUES
     (18,26,14),
     (19,26,16),(20,27,17),
     (21,26,18),(22,27,18),
-    (23,30,14),(24,31,19);
+    (23,30,14),(24,31,19),
+    (25,33,20),(26,33,21),
+    (27,34,22),(28,34,23);
