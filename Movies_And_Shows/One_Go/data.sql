@@ -2,7 +2,7 @@
 
 INSERT INTO actors(id,name,DOB,country)
 VALUES
-	  (1,'Millie Bobby Brown','2004-02-19','Britain'),
+	  (1,'Millie Bobby Brown','2004-02-19','British'),
 	  (2,'Lisa Vicari','1997-02-11','German'),
     (3,'Ty Burrell','1967-08-22','America'),
     (4,'Matt LeBlanc','1967-07-25','America'),
@@ -43,22 +43,29 @@ VALUES
 
 INSERT INTO 
     series
-		(id,name,genre,rating,creators,no_of_episodes,first_episode_date,no_of_seasons)
+		(id,name,genre,rating,creators,no_of_episodes,first_episode_date,no_of_seasons,summary)
     VALUES
-		    (1,'Stranger Things','Horror',8.6,'Matt Duffer,Ross Duffer',34,'2016-07-15',4),
-        (2,'Dark','Thriller',8.7,'Baran bo Odar, Jantje Friese',26,'2017-12-01',3),
-        (3,'Modern Family','Sitcom',8.5,'Christopher Lloyd, Steven Levitan',250,'2009-09-23',11),
-        (4,'Friends','Sitcom',8.9,'Marta Kauffman, David Crane',236,'1994-09-22',10),
-        (5,'Seinfeld','Sitcom',8.9,'Jerry Seinfeld, Larry David',180,'1989-07-05',9),
-        (6,'Nancy Drew','Thriller',6.7,'Edward Stratemeyer',62,'2019-10-09',4),
-        (7,'The Office','Sitcom',9,'Greg Daniels; Ricky Gervais',201,'2005-03-24',9),
-        (8,'Brooklyn Nine-Nine','Sitcom',8.4,'Michael Schur, Dan Goor, Carly Hallam, Norm Hiscock',153,'2013-09-17',8),
-        (9,'The Big Bang Theory','Sitcom',8.1,'Chuck Lorre, Bill Prady',279,'2007-09-24',12),
-        (10,'True Detective','Drama',8.9,' Nic Pizzolatto, Issa López',30,'2014-01-12',4),
-        (11,'Mare of Easttown','Drama',8.4,'Brad Ingelsby',7,'2021-04-18',1),
-        (12,'Two and a Half Men','Sitcom',7.1,' Chuck Lorre, Lee Aronsohn',262,'2003-09-22',12),
-        (13,'It\'s Always Sunny in Philadelphia','Sitcom',8.8,' Rob McElhenney',170,'2005-08-04',16),
-        (14,'30 Rock','Sitcom',8.3,'Tina Fey',138,'2006-10-11',7);
+		    (1,'Stranger Things','Horror',8.6,'Matt Duffer,Ross Duffer',34,'2016-07-15',4,'In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.'),
+        (2,'Dark','Thriller',8.7,'Baran bo Odar, Jantje Friese',26,'2017-12-01',3,'When two children go missing in a small German town, its sinful past is exposed along with the double lives and fractured relationships that exist among four families as they search for the kids. The mystery-drama series introduces an intricate puzzle filled with twists that includes a web of curious characters, all of whom have a connection to the town\'s troubled history -- whether they know it or not. The story includes supernatural elements that tie back to the same town in 1986. "Dark" represents the first German original series produced for Netflix.'),
+        (3,'Modern Family','Sitcom',8.5,'Christopher Lloyd, Steven Levitan',250,'2009-09-23',11,'Three modern-day families from California try to deal with their kids, quirky spouses and jobs in their own unique ways, often falling into hilarious situations.'),
+        (4,'Friends','Sitcom',8.9,'Marta Kauffman, David Crane',236,'1994-09-22',10,'Follow the lives of six reckless adults living in Manhattan, as they indulge in adventures which make their lives both troublesome and happening.
+'),
+        (5,'Seinfeld','Sitcom',8.9,'Jerry Seinfeld, Larry David',180,'1989-07-05',9,'Stand-up comedian Jerry Seinfeld wrestles with life\'s most perplexing yet trivial questions with his eccentric friends George, Elaine and Kramer.
+'),
+        (6,'Nancy Drew','Thriller',6.7,'Edward Stratemeyer',62,'2019-10-09',4,'While preparing to leave her hometown for college, Nancy Drew\'s plans take an unexpected turn when she discovers a supernatural murder mystery.
+'),
+        (7,'The Office','Sitcom',9,'Greg Daniels; Ricky Gervais',201,'2005-03-24',9,'The show documents the exploits of a paper supply company in Scranton, Pennsylvania. With an office including the likes of various peers, this series takes a look at the lives of its co-workers.'),
+        (8,'Brooklyn Nine-Nine','Sitcom',8.4,'Michael Schur, Dan Goor, Carly Hallam, Norm Hiscock',153,'2013-09-17',8,'Ray Holt, an eccentric commanding officer, and his diverse and quirky team of odd detectives solve crimes in Brooklyn, New York City.
+'),
+        (9,'The Big Bang Theory','Sitcom',8.1,'Chuck Lorre, Bill Prady',279,'2007-09-24',12,'The lives of four socially awkward friends, Leonard, Sheldon, Howard and Raj, take a wild turn when they meet the beautiful and free-spirited Penny.
+'),
+        (10,'True Detective','Drama',8.9,' Nic Pizzolatto, Issa López',30,'2014-01-12',4,'Police officers and detectives around the USA are forced to face dark secrets about themselves and the people around them while investigating homicides.
+'),
+        (11,'Mare of Easttown','Drama',8.4,'Brad Ingelsby',7,'2021-04-18',1,'A detective from Pennsylvania tries her best to prevent her life from falling apart while investigating a mysterious murder.
+'),
+        (12,'Two and a Half Men','Sitcom',7.1,' Chuck Lorre, Lee Aronsohn',262,'2003-09-22',12,'Charlie Harper\'s life turns upside down after his divorcee brother Alan moves in with him. Completely opposite to each other, the brothers\' love-hate relationship survives all trials and tribulations.'),
+        (13,'It\'s Always Sunny in Philadelphia','Sitcom',8.8,' Rob McElhenney',170,'2005-08-04',16,'In Philadelphia, five toxically co-dependent and selfishly motivated friends run a decrepit Irish bar that bears witness to all kinds of trickery.'),
+        (14,'30 Rock','Sitcom',8.3,'Tina Fey',138,'2006-10-11',7,'Liz Lemon, head writer of a sketch comedy show, has to deal with her arrogant boss and eccentric stars. Regardless, she must run the TV show successfully without losing her mind.');
 
     -- ACTORS IN SERIES TABLE
     
